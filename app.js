@@ -22,7 +22,7 @@ var app = express();
 
 //setting up mongoose connection -- the same every time except url changes for each database used
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://celismb:LoveJeff28@ds125060.mlab.com:25060/local_library';
+var mongoDB = 'mongodb://celismb:@ds125060.mlab.com:25060/local_library';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
